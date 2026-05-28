@@ -58,9 +58,7 @@ Run the cells from top to bottom to reproduce the analysis, clustering, PCA plot
 
 The K-Means clusters showed some meaningful structure, especially by separating smaller abalones from larger abalones. However, the clusters did not perfectly match the true age groups based on Rings.
 
-The PCA visualization showed a large amount of overlap between the groups. This means that physical measurements alone can give some information about age, but they are not enough to cleanly separate abalones into accurate age-based clusters using only K-Means.
-
-One important result was that the first two PCA components explained about 94.8% of the variance, so the two-dimensional PCA plot was a useful summary of the main patterns in the data. Even with that strong summary, the overlap suggests that another type of model may work better for predicting abalone age.
+The PCA visualization showed a large amount of overlap between the groups. This means that while physical measurements alone can give some information about age, they do not accurately separate abalones into age-based clusters.
 
 ## Skills Demonstrated
 
