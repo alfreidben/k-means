@@ -1,16 +1,16 @@
 # Abalone Clustering with K-Means and PCA
 
-This project uses unsupervised machine learning to group abalones by their physical measurements and explore whether those groups relate to abalone age.
+This project uses unsupervised learning to group abalones by their physical measurements to explore whether those clusters relate to an abalone’s age.
 
 ## Motivation / Context
 
-Determining the age of an abalone usually requires cutting the shell, staining it, and counting rings under a microscope, which is time-consuming. This project asks whether easier-to-measure physical features, such as length, diameter, height, and weight, can reveal useful patterns about abalone size and age.
+Determining the age of an abalone usually requires cutting the shell, staining it, and counting rings under a microscope, which is time-consuming. This project’s main goal was to see if easier to measure physical features, such as length, diameter, height, and weight, can reveal useful patterns about abalone size and age.
 
 This type of analysis connects to real-world problems where people want to find natural groups in data without already knowing the correct labels. Similar methods are used in customer segmentation, recommendation systems, and biological data exploration.
 
 ## What I Did
 
-I used the Abalone dataset from the UCI Machine Learning Repository. The dataset contains 4,177 abalones with physical measurements such as sex, length, diameter, height, whole weight, shucked weight, viscera weight, shell weight, and rings. The Rings column is related to age because adding 1.5 to the number of rings gives the estimated age in years.
+I used the Abalone dataset from the UCI Machine Learning Repository. The dataset contains 4,177 abalones with physical measurements such as length, diameter, height, whole weight, shucked weight, viscera weight, shell weight, and rings. The ring count of an abalone can be used to estimate an abalone’s age by adding 1.5 to the number of rings it has, so it was excluded from the k-means and used to see the accuracy of the clusters afterwards.
 
 In the notebook, I:
 
@@ -19,7 +19,7 @@ In the notebook, I:
 3. Standardized the numeric features so that larger-scale measurements would not dominate the clustering.
 4. Applied K-Means clustering to group abalones based on their measurements.
 5. Used PCA to reduce the data to two dimensions so the clusters could be visualized.
-6. Compared the clusters with the known Rings values to see whether the groupings matched abalone age.
+6. Compared the clusters with the known Rings values to see whether the clusters matched the abalones’ general age.
 
 ## How to Run the Code
 
