@@ -42,10 +42,6 @@ cd data-science-projects
 
 2. Open Jupyter Notebook:
 
-```bash
-jupyter notebook
-```
-
 3. Open and run:
 
 ```text
@@ -58,7 +54,7 @@ Run the cells from top to bottom to reproduce the analysis, clustering, PCA plot
 
 The K-Means clusters showed some meaningful structure, especially by separating smaller abalones from larger abalones. However, the clusters did not perfectly match the true age groups based on Rings.
 
-The PCA visualization showed a large amount of overlap between the groups. This means that while physical measurements alone can give some information about age, they do not accurately separate abalones into age-based clusters.
+The PCA visualization showed a large amount of overlap between the groups. This means that while physical measurements alone can give some information about age, they are not enough to accurately separate abalones into age-based clusters.
 
 ## Skills Demonstrated
 
